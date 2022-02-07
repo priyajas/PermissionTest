@@ -46,7 +46,7 @@ open class MainActivity : AppCompatActivity() {
             this,
             "App requires location permission to track vehicle",
             Toast.LENGTH_SHORT
-        )
+        ).show()
         requestPermissionLauncher.launch(permissions)
     }
 
@@ -61,13 +61,13 @@ open class MainActivity : AppCompatActivity() {
                 this,
                 "Permission Granted",
                 Toast.LENGTH_SHORT
-            )
+            ).show()
         } else {
             Toast.makeText(
                 this,
                 "Permission already allowed",
                 Toast.LENGTH_SHORT
-            )
+            ).show()
         }
     }
 
